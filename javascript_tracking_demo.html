@@ -115,8 +115,10 @@
 		$(document).ready(function(){
 			var referer_url = document.referer;
 			var url = document.createElement('a');
-		    url.href = document.referer;
-		    var referer_domain = url.hostname;
+		   	url.href = document.referer;
+		    	var referer_domain = url.hostname;
+			console.log(referer_url);
+			console.log(referer_domain);
 		});
 	</script>
 </body>
