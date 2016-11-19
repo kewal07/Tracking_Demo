@@ -1,0 +1,21 @@
+<html>
+<head>
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+	<div class="embed-pollaroid" id="embed-pollaroid-15"></div>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$.ajax({
+		method: "GET",
+		url: "http://localhost:8000/pollaroid-preview/15/may-map-to-user",
+	  	success: function(result){
+	  		// console.log(result);
+	  		$("#embed-pollaroid-15").html(result);
+	  	}
+	}).done(function() {
+	});
+});
+</script>
+</html>
